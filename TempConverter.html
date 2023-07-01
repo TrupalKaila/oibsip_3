@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Coverter</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <div class="mainpage">
+        <div class="converter">
+            <div class="blockborder">
+                <h3>Temperature Converter &nbsp <i class="fa fa-thermometer-half" aria-hidden="true"></i></h3><br>
+                <p>Enter value to convert temperature in different units</p><br>
+
+                    <input type="text" id="txtCelsius" placeholder="Celsius" onkeypress="return onlyNumberKey(event)" onchange="convToFKC()">
+                    <label for="celsius">°C</label><br>
+
+                    <input type="text" id="txtFahrenheit" placeholder="Fahrenheit" onkeypress="return onlyNumberKey(event)" onchange="convToFKC()">
+                    <label for="fahrenheit">°F</label><br>
+
+                    <input type="text" id="txtKelvin" placeholder="Kelvin" onkeypress="return onlyNumberKey(event)" onchange="convToFKC()">
+                    <label for="kelvin">K</label><br>
+
+                <button style="--s:12px; --c: #E6C13A;" onclick="clearAllField()">All Clear</button>
+                <br>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
